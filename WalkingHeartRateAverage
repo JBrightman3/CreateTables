@@ -1,0 +1,18 @@
+CREATE TABLE "AWP01_Ph03"."WalkingHeartRateAverage"
+(
+    walkingheartrateaverage_id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    source_name character(500) COLLATE pg_catalog."default",
+    source_version character(500) COLLATE pg_catalog."default",
+    type character(500) COLLATE pg_catalog."default" NOT NULL,
+    unit character(500) COLLATE pg_catalog."default",
+    creation_date timestamp without time zone NOT NULL,
+    start_date timestamp without time zone NOT NULL,
+    end_date timestamp without time zone NOT NULL,
+    value numeric(5,1) NOT NULL,
+    CONSTRAINT "WalkingHeartRateAverage_pkey" PRIMARY KEY (walkingheartrateaverage_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE "AWP01_Ph03"."WalkingHeartRateAverage"
+    OWNER to postgres;
