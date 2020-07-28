@@ -20,4 +20,4 @@ CREATE TABLE "AWP01_Ph03"."Workout"
 TABLESPACE pg_default;
 
 ALTER TABLE "AWP01_Ph03"."Workout"
-    OWNER to jessie;
+    OWNER to postgres;
