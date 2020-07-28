@@ -16,3 +16,6 @@ CREATE TABLE "AWP01_Ph03"."ActiveEnergyBurned"
 )
 
 TABLESPACE pg_default;
+
+ALTER TABLE "AWP01_Ph03"."ActiveEnergyBurned"
+    OWNER to postgres;
