@@ -1,0 +1,16 @@
+CREATE TABLE "AWP01_Ph03"."ActivitySummary"
+(
+    activitysummary_id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    date_components timestamp without time zone NOT NULL,
+    active_energy_burned numeric(12,8),
+    active_energy_burned_goal integer,
+    active_energy_burned_unit character(500) COLLATE pg_catalog."default",
+    apple_exercise_time integer,
+    appple_exercise_time_goal integer,
+    apple_stand_hours integer,
+    apple_stand_hours_goal integer,
+    CONSTRAINT "Activitysummary_pkey" PRIMARY KEY (activitysummary_id)
+)
+
+TABLESPACE pg_default;
+
