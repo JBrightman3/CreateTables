@@ -1,0 +1,23 @@
+CREATE TABLE "AWP01_Ph03"."Workout"
+(
+    workout_id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    source_name character(500) COLLATE pg_catalog."default",
+    source_version character(500) COLLATE pg_catalog."default",
+    device character(500) COLLATE pg_catalog."default",
+    creation_date timestamp without time zone NOT NULL,
+    start_date timestamp without time zone NOT NULL,
+    end_date timestamp without time zone NOT NULL,
+    workout_activity_type character(500) COLLATE pg_catalog."default",
+    duration numeric(12,8) NOT NULL,
+    duration_unit character(500) COLLATE pg_catalog."default",
+    total_distance numeric(12,8) NOT NULL,
+    total_distance_unit character(500) COLLATE pg_catalog."default",
+    total_energy_burned numeric(10,4) NOT NULL,
+    total_energy_burned_unit character(500) COLLATE pg_catalog."default",
+    CONSTRAINT workout_pkey PRIMARY KEY (workout_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE "AWP01_Ph03"."Workout"
+    OWNER to jessie;
