@@ -14,3 +14,6 @@ CREATE TABLE "AWP01_Ph03"."ActivitySummary"
 
 TABLESPACE pg_default;
 
+ALTER TABLE "AWP01_Ph03"."ActivitySummary"
+    OWNER to postgres;
+
